@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ForceMetricsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BarChart fx:id="areaSearchAreaChart" style="-fx-background-color: #DDDDDD;" title="Area Search Size with Chosen Portfolio at Radius X">
+         <xAxis>
+            <CategoryAxis label="Radius (nm)" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Area (nm^2)" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <BarChart fx:id="areaSearchAssetsChart" style="-fx-background-color: #DDDDDD;" title="Units Required for Area Search of X Area of Regard at Y Radius" GridPane.columnIndex="1">
+         <xAxis>
+            <CategoryAxis label="Radius (nm)" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Units Required" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <BarChart fx:id="focusSearchAreaChart" style="-fx-background-color: #DDDDDD;" title="Focused Search Orbits with Chosen Portfolio at Radius X" GridPane.rowIndex="1">
+         <xAxis>
+            <CategoryAxis label="Radius (nm)" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Orbits Sustained" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <BarChart fx:id="focusSearchAssetsChart" style="-fx-background-color: #DDDDDD;" title="Units Required for Focused Search of X Area of Regard at Y Radius" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <xAxis>
+            <CategoryAxis label="Radius (nm)" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Units Required" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</GridPane>

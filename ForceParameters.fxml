@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ForceParametersController">
+   <tabs>
+      <Tab closable="false" text="Raw Data">
+         <content>
+            <GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #DDDDDD;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Max Range at Cruise (nm)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Cruise Speed (kn)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Average Opposing Wind" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Average Net Speed" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Total Endurance +1hr Reserve" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Cruise Alt. (ft)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Cruise Alt. (m)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Range to Horizon (nm)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Availability Rate (*10)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Range to Sweep Width Conversion (*10)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Area Sweep Per Hour (nm^2)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="MQ-4C" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="MQ-9B" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Integrator" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="P-1" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="RQ-58" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Thunderhead" textAlignment="CENTER" textFill="#00695d" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CMaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CCruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BCruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BMaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CAverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BAverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CTotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BTotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CRangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BRangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ4CAreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BAreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorMaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorCruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorAverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorTotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorRangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorAreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1MaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1CruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1AverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1TotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1RangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1AreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58MaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58CruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58AverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58TotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58RangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58AreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadMaxRange" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadCruiseSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadAverageNetSpeed" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadTotalEndurance" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadRangeToHorizon" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadAreaSweepPerHour" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="MQ4CAverageOpposingWind" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="MQ9BAverageOpposingWind" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="integratorAverageOpposingWind" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="P1AverageOpposingWind" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="RQ58AverageOpposingWind" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="MQ4CCruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="MQ9BCruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="integratorCruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="P1CruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="RQ58CruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="thunderheadCruiseAltitudeFt" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="MQ4CAvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="MQ9BAvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="integratorAvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="P1AvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="RQ58AvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="thunderheadAvailabilityRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="MQ4CRangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="MQ9BRangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="integratorRangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="P1RangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="RQ58RangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="thunderheadRangeToSweepWidthConversion" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                  <Label fx:id="MQ4CCruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MQ9BCruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="integratorCruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P1CruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="RQ58CruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thunderheadCruiseAltitudeM" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DATA" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Revisit Rate (hours)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="MQ4CRevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="MQ9BRevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="integratorRevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="P1RevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="RQ58RevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                  <ComboBox fx:id="thunderheadRevisitRate" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Area of Regard (nm^2)" textAlignment="CENTER" textFill="#00695d" wrapText="true" GridPane.rowIndex="13">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="MQ4CAreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="MQ9BAreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="integratorAreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="P1AreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="RQ58AreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+                  <ComboBox fx:id="thunderheadAreaOfRegard" maxWidth="1.7976931348623157E308" onAction="#onUpdate" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Georgia" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Time on Station">
+        <content>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #DDDDDD;">
+               <children>
+                  <BarChart fx:id="timeOnStationChart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #DDDDDD;" title="Individual Asset Time on Station at X Operational Radius">
+                    <xAxis>
+                      <CategoryAxis label="Operational Radius (nm)" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="BOTTOM">
+                           <tickLabelFont>
+                              <Font size="13.0" />
+                           </tickLabelFont>
+                        </CategoryAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Hours on Station (x3 days for Thunderhead)" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="LEFT">
+                           <tickLabelFont>
+                              <Font size="13.0" />
+                           </tickLabelFont>
+                        </NumberAxis>
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </VBox>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>

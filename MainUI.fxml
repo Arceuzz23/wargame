@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.23604060913705585" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="928.0" prefWidth="1669.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <VBox alignment="CENTER" layoutY="-1.0" prefHeight="398.0" prefWidth="146.0" spacing="40.0" style="-fx-background-color: #DDDDDD#DDDDDD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button id="forceAnalysisButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPurchasingClick" style="-fx-background-color: #00695D;" text="Purchasing" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="forceAnalysisButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onForceParametersClick" style="-fx-background-color: #00695D;" text="Force Parameters" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="forceAnalysisButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onForceCostClick" style="-fx-background-color: #00695D;" text="Force Cost" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="forceAnalysisButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onForceMetricsClick" style="-fx-background-color: #00695D;" text="Force Metrics" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="MQ4CButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMQ4CClick" style="-fx-background-color: #00695D;" text="MQ-4C Triton" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="MQ9BButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMQ9BClick" style="-fx-background-color: #00695D;" text="MQ-9B SeaGuardian" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="integratorButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onIntegratorClick" style="-fx-background-color: #00695D;" text="Integrator ER" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="P1Button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onP1Click" style="-fx-background-color: #00695D;" text="Kawasaki P-1" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="RQ58Button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onRQ58Click" style="-fx-background-color: #00695D;" text="RQ-58 Valkyrie" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="ThunderheadButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onThunderheadClick" style="-fx-background-color: #00695D;" text="Thunderhead" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <SplitPane fx:id="analysisPane" dividerPositions="0.10227272727272728" orientation="VERTICAL" prefHeight="516.0" prefWidth="605.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane style="-fx-background-color: #DDDDDD#DDDDDD;">
+                     <children>
+                        <Label fx:id="titleLabel" alignment="CENTER" prefHeight="49.0" prefWidth="603.0" style="-fx-alignment: center;" text="Force Analysis" textAlignment="CENTER" textFill="#00695d" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Georgia Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                  <BorderPane fx:id="mainBorderPane" prefHeight="51.0" prefWidth="525.0" />
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
